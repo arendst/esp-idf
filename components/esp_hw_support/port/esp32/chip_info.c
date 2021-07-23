@@ -37,6 +37,7 @@ void esp_chip_info(esp_chip_info_t* out_info)
     }
     uint32_t package = esp_efuse_get_pkg_ver();
     if (package == EFUSE_RD_CHIP_VER_PKG_ESP32D2WDQ5 ||
+        package == EFUSE_RD_CHIP_VER_PKG_ESP32D0WDOEM ||       
         package == EFUSE_RD_CHIP_VER_PKG_ESP32PICOD2 ||
         package == EFUSE_RD_CHIP_VER_PKG_ESP32PICOD4 ||
         package == EFUSE_RD_CHIP_VER_PKG_ESP32PICOV302) {
